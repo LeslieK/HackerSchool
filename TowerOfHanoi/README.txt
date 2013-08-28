@@ -16,3 +16,23 @@ Output:
 >> 1 3  				move from peg 1 to 3
 >> 1 2 					move from peg 1 to 2
 >> 3 2 					move from peg 3 to 2
+
+Hanoi2.py:
+
+This is a modified version of Hanoi.py so that I can profile it and then refactor it to improve its performance.
+It does not read input from std input. Instead, the input values are fixed in the program.
+
+input:
+N = 6; K = 4
+num_discs = N; num_pegs = K
+initial = '4 2 4 3 1 1'
+final = '1 1 1 1 1 1'
+
+output:
+
+5  (minimum number of moves) 
+3 1				move from peg 3 to 1
+4 3				move from peg 4 to 3
+4 1				move from peg 4 to 1
+2 1				move from peg 2 to 1
+3 1				move from peg 3 to 1

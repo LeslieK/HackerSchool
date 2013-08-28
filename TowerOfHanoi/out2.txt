@@ -1,0 +1,228 @@
+5
+3 1
+4 3
+4 1
+2 1
+3 1
+         244768 function calls (244580 primitive calls) in 10.193 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 <string>:1(DecimalTuple)
+        1    0.016    0.016    0.079    0.079 BreadthFirstSearch.py:1(<module>)
+        1    0.070    0.070    0.105    0.105 BreadthFirstSearch.py:14(_bfs)
+        1    0.000    0.000    0.000    0.000 BreadthFirstSearch.py:36(hasPathTo)
+        1    0.000    0.000    0.000    0.000 BreadthFirstSearch.py:39(distTo)
+        1    0.000    0.000    0.000    0.000 BreadthFirstSearch.py:42(pathTo)
+        1    0.000    0.000    0.000    0.000 BreadthFirstSearch.py:5(BreadthFirstSearch)
+        1    0.000    0.000    0.000    0.000 BreadthFirstSearch.py:53(isIterable)
+        1    0.003    0.003    0.109    0.109 BreadthFirstSearch.py:6(__init__)
+        1    0.019    0.019    0.054    0.054 GraphLib.py:11(__init__)
+        1    0.000    0.000    0.000    0.000 GraphLib.py:126(EdgeWeightedGraph)
+        1    0.000    0.000    0.000    0.000 GraphLib.py:184(EdgeWeightedDigraph)
+        1    0.082    0.082    0.183    0.183 GraphLib.py:2(<module>)
+    24192    0.192    0.000    0.230    0.000 GraphLib.py:24(addEdge)
+     4096    0.011    0.000    0.011    0.000 GraphLib.py:29(adj)
+        3    0.000    0.000    0.000    0.000 GraphLib.py:33(V)
+        1    0.000    0.000    0.000    0.000 GraphLib.py:70(Digraph)
+        1    0.000    0.000    0.000    0.000 GraphLib.py:9(Graph)
+        1    0.003    0.003    0.003    0.003 Hanoi2.py:104(buildSymTbls)
+        1    0.095    0.095    0.379    0.379 Hanoi2.py:117(buildGraph)
+        1    0.000    0.000    0.000    0.000 Hanoi2.py:131(buildActions)
+        1    0.133    0.133   10.193   10.193 Hanoi2.py:2(<module>)
+     4097    0.490    0.000    1.064    0.000 Hanoi2.py:42(next_state)
+    24582    0.273    0.000    0.401    0.000 Hanoi2.py:77(build_marked)
+        1    8.166    8.166    9.264    9.264 Hanoi2.py:90(buildDictOfStates)
+        1    0.000    0.000    0.000    0.000 WeightedEdge.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 WeightedEdge.py:1(Edge)
+        1    0.000    0.000    0.000    0.000 __future__.py:48(<module>)
+        1    0.000    0.000    0.000    0.000 __future__.py:74(_Feature)
+        7    0.000    0.000    0.000    0.000 __future__.py:75(__init__)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:16(__init__)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:20(__enter__)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:26(__exit__)
+       21    0.000    0.000    0.000    0.000 _weakrefset.py:36(__init__)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:52(_commit_removals)
+       14    0.000    0.000    0.000    0.000 _weakrefset.py:58(__iter__)
+       12    0.000    0.000    0.000    0.000 _weakrefset.py:68(__contains__)
+       14    0.000    0.000    0.000    0.000 _weakrefset.py:81(add)
+        5    0.000    0.000    0.001    0.000 abc.py:105(register)
+      9/5    0.000    0.000    0.001    0.000 abc.py:148(__subclasscheck__)
+       37    0.000    0.000    0.000    0.000 abc.py:15(abstractmethod)
+        5    0.001    0.000    0.002    0.000 abc.py:86(__new__)
+       46    0.000    0.000    0.000    0.000 abc.py:89(<genexpr>)
+        1    0.000    0.000    0.000    0.000 bisect.py:1(<module>)
+        1    0.024    0.024    0.043    0.043 collections.py:1(<module>)
+        1    0.001    0.001    0.001    0.001 collections.py:237(namedtuple)
+        1    0.000    0.000    0.000    0.000 collections.py:25(OrderedDict)
+       34    0.000    0.000    0.000    0.000 collections.py:277(<genexpr>)
+        4    0.000    0.000    0.000    0.000 collections.py:294(<genexpr>)
+        1    0.000    0.000    0.000    0.000 collections.py:355(Counter)
+     4096    0.022    0.000    0.028    0.000 collections.py:406(__init__)
+    24192    0.038    0.000    0.038    0.000 collections.py:420(__missing__)
+     4096    0.007    0.000    0.007    0.000 collections.py:469(update)
+        1    0.029    0.029    0.063    0.063 decimal.py:116(<module>)
+        1    0.000    0.000    0.000    0.000 decimal.py:161(DecimalException)
+        1    0.000    0.000    0.000    0.000 decimal.py:184(Clamped)
+        1    0.000    0.000    0.000    0.000 decimal.py:196(InvalidOperation)
+        1    0.000    0.000    0.000    0.000 decimal.py:225(ConversionSyntax)
+        1    0.000    0.000    0.000    0.000 decimal.py:235(DivisionByZero)
+        1    0.000    0.000    0.000    0.000 decimal.py:251(DivisionImpossible)
+        1    0.000    0.000    0.000    0.000 decimal.py:262(DivisionUndefined)
+        1    0.000    0.000    0.000    0.000 decimal.py:273(Inexact)
+        1    0.000    0.000    0.000    0.000 decimal.py:285(InvalidContext)
+        1    0.000    0.000    0.000    0.000 decimal.py:299(Rounded)
+        1    0.000    0.000    0.000    0.000 decimal.py:311(Subnormal)
+        1    0.000    0.000    0.000    0.000 decimal.py:322(Overflow)
+        1    0.000    0.000    0.000    0.000 decimal.py:360(Underflow)
+        1    0.000    0.000    0.000    0.000 decimal.py:3720(_ContextManager)
+        1    0.000    0.000    0.000    0.000 decimal.py:3735(Context)
+        3    0.000    0.000    0.000    0.000 decimal.py:3754(__init__)
+       27    0.000    0.000    0.000    0.000 decimal.py:3781(<genexpr>)
+       27    0.000    0.000    0.000    0.000 decimal.py:3788(<genexpr>)
+        1    0.000    0.000    0.000    0.000 decimal.py:506(Decimal)
+        7    0.000    0.000    0.000    0.000 decimal.py:515(__new__)
+        1    0.000    0.000    0.000    0.000 decimal.py:5390(_WorkRep)
+        1    0.000    0.000    0.000    0.000 decimal.py:5623(_Log10Memoize)
+        1    0.000    0.000    0.000    0.000 decimal.py:5627(__init__)
+        1    0.039    0.039    0.039    0.039 hashlib.py:55(<module>)
+        6    0.000    0.000    0.000    0.000 hashlib.py:94(__get_openssl_constructor)
+        1    0.019    0.019    0.019    0.019 heapq.py:31(<module>)
+        1    0.000    0.000    0.000    0.000 keyword.py:11(<module>)
+        1    0.000    0.000    0.000    0.000 numbers.py:13(Number)
+        1    0.000    0.000    0.000    0.000 numbers.py:169(Real)
+        1    0.000    0.000    0.000    0.000 numbers.py:270(Rational)
+        1    0.000    0.000    0.000    0.000 numbers.py:295(Integral)
+        1    0.000    0.000    0.000    0.000 numbers.py:34(Complex)
+        1    0.000    0.000    0.003    0.003 numbers.py:6(<module>)
+        1    0.000    0.000    0.020    0.020 random.py:100(seed)
+        1    0.042    0.042    0.101    0.101 random.py:40(<module>)
+        1    0.000    0.000    0.000    0.000 random.py:653(WichmannHill)
+        1    0.000    0.000    0.000    0.000 random.py:72(Random)
+        1    0.000    0.000    0.000    0.000 random.py:803(SystemRandom)
+        1    0.000    0.000    0.020    0.020 random.py:91(__init__)
+        6    0.000    0.000    0.025    0.004 re.py:188(compile)
+        6    0.000    0.000    0.025    0.004 re.py:228(_compile)
+       13    0.000    0.000    0.001    0.000 sre_compile.py:178(_compile_charset)
+       13    0.000    0.000    0.001    0.000 sre_compile.py:207(_optimize_charset)
+       18    0.000    0.000    0.000    0.000 sre_compile.py:24(_identityfunction)
+        2    0.000    0.000    0.000    0.000 sre_compile.py:258(_mk_bitmap)
+     58/6    0.002    0.000    0.005    0.001 sre_compile.py:32(_compile)
+       22    0.000    0.000    0.000    0.000 sre_compile.py:354(_simple)
+        6    0.000    0.000    0.001    0.000 sre_compile.py:361(_compile_info)
+       12    0.000    0.000    0.000    0.000 sre_compile.py:474(isstring)
+        6    0.000    0.000    0.006    0.001 sre_compile.py:480(_code)
+        6    0.000    0.000    0.025    0.004 sre_compile.py:495(compile)
+        8    0.000    0.000    0.000    0.000 sre_compile.py:51(fixup)
+       98    0.000    0.000    0.000    0.000 sre_parse.py:126(__len__)
+      216    0.001    0.000    0.002    0.000 sre_parse.py:130(__getitem__)
+       22    0.000    0.000    0.000    0.000 sre_parse.py:134(__setitem__)
+       91    0.000    0.000    0.000    0.000 sre_parse.py:138(append)
+    75/28    0.001    0.000    0.001    0.000 sre_parse.py:140(getwidth)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:178(__init__)
+      914    0.005    0.000    0.008    0.000 sre_parse.py:182(__next)
+      189    0.001    0.000    0.001    0.000 sre_parse.py:195(match)
+      832    0.003    0.000    0.010    0.000 sre_parse.py:201(get)
+       82    0.000    0.000    0.000    0.000 sre_parse.py:210(isident)
+       14    0.000    0.000    0.000    0.000 sre_parse.py:216(isname)
+       14    0.000    0.000    0.000    0.000 sre_parse.py:257(_escape)
+     29/6    0.000    0.000    0.019    0.003 sre_parse.py:301(_parse_sub)
+     33/6    0.004    0.000    0.019    0.003 sre_parse.py:379(_parse)
+        6    0.000    0.000    0.019    0.003 sre_parse.py:663(parse)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:67(__init__)
+       18    0.000    0.000    0.000    0.000 sre_parse.py:72(opengroup)
+       18    0.000    0.000    0.000    0.000 sre_parse.py:83(closegroup)
+       58    0.000    0.000    0.000    0.000 sre_parse.py:90(__init__)
+        1    0.002    0.002    0.004    0.004 threading.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 threading.py:104(_RLock)
+        2    0.000    0.000    0.000    0.000 threading.py:181(Condition)
+        1    0.000    0.000    0.000    0.000 threading.py:184(_Condition)
+        2    0.000    0.000    0.000    0.000 threading.py:186(__init__)
+        1    0.000    0.000    0.000    0.000 threading.py:226(_is_owned)
+        1    0.000    0.000    0.000    0.000 threading.py:277(notify)
+        1    0.000    0.000    0.000    0.000 threading.py:295(notifyAll)
+        1    0.000    0.000    0.000    0.000 threading.py:304(_Semaphore)
+        1    0.000    0.000    0.000    0.000 threading.py:352(_BoundedSemaphore)
+        1    0.000    0.000    0.000    0.000 threading.py:364(Event)
+        1    0.000    0.000    0.000    0.000 threading.py:367(_Event)
+        1    0.000    0.000    0.000    0.000 threading.py:371(__init__)
+        1    0.000    0.000    0.000    0.000 threading.py:385(set)
+        1    0.000    0.000    0.000    0.000 threading.py:424(Thread)
+        1    0.000    0.000    0.000    0.000 threading.py:436(__init__)
+        1    0.000    0.000    0.000    0.000 threading.py:531(_set_ident)
+        1    0.000    0.000    0.000    0.000 threading.py:56(_Verbose)
+        4    0.000    0.000    0.000    0.000 threading.py:58(__init__)
+        1    0.000    0.000    0.000    0.000 threading.py:63(_note)
+        1    0.000    0.000    0.000    0.000 threading.py:733(_Timer)
+        1    0.000    0.000    0.000    0.000 threading.py:762(_MainThread)
+        1    0.000    0.000    0.000    0.000 threading.py:764(__init__)
+        1    0.000    0.000    0.000    0.000 threading.py:771(_set_daemon)
+        1    0.000    0.000    0.000    0.000 threading.py:802(_DummyThread)
+        1    0.000    0.000    0.002    0.002 warnings.py:45(filterwarnings)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_md5}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha1}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha224}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha256}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha384}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha512}
+        6    0.000    0.000    0.000    0.000 {_sre.compile}
+       35    0.000    0.000    0.000    0.000 {_sre.getlower}
+        3    0.000    0.000    0.000    0.000 {abs}
+        4    0.000    0.000    0.000    0.000 {all}
+        1    0.000    0.000    0.000    0.000 {binascii.hexlify}
+       12    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x1E1D4498}
+        1    0.000    0.000    0.000    0.000 {function seed at 0x01BDAEB0}
+      219    0.000    0.000    0.000    0.000 {getattr}
+        6    0.000    0.000    0.000    0.000 {globals}
+        2    0.000    0.000    0.000    0.000 {hasattr}
+      260    0.001    0.000    0.001    0.000 {isinstance}
+    20/11    0.000    0.000    0.001    0.000 {issubclass}
+10322/10296    0.022    0.000    0.022    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {locals}
+        1    0.000    0.000    0.000    0.000 {map}
+        1    0.000    0.000    0.000    0.000 {math.exp}
+        2    0.000    0.000    0.000    0.000 {math.log}
+        1    0.000    0.000    0.000    0.000 {math.sqrt}
+        5    0.000    0.000    0.000    0.000 {max}
+        4    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        9    0.000    0.000    0.000    0.000 {method '__subclasses__' of 'type' objects}
+        9    0.000    0.000    0.000    0.000 {method '__subclasshook__' of 'object' objects}
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of 'thread.lock' objects}
+       82    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+     8193    0.016    0.000    0.016    0.000 {method 'append' of 'collections.deque' objects}
+    33044    0.065    0.000    0.065    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+    24588    0.066    0.000    0.066    0.000 {method 'extend' of 'list' objects}
+        5    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+       39    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       13    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+        1    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+       30    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {method 'isdigit' of 'str' objects}
+       11    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'iteritems' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+     8193    0.016    0.000    0.016    0.000 {method 'popleft' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {method 'release' of 'thread.lock' objects}
+       18    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        9    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
+        3    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+      111    0.000    0.000    0.000    0.000 {min}
+        1    0.020    0.020    0.020    0.020 {nt.urandom}
+       64    0.000    0.000    0.000    0.000 {ord}
+    66738    0.187    0.000    0.187    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {repr}
+        1    0.000    0.000    0.000    0.000 {sys._getframe}
+        3    0.000    0.000    0.000    0.000 {thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 {thread.get_ident}
+
+
