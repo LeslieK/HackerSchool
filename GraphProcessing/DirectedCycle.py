@@ -7,52 +7,93 @@
 # dc.cycle()
 # returns: 2 0 5 4 2
 
-class DC(object):
-	"find first directed cycle in a digraph"
-	def __init__(self, G):
-		self._marked = [(False, -1) for _ in range(G.V())]
-		self._edgeTo = [-1 for _ in range(G.V())]
-		self._cycle = []
-		for v in range(G.V()):
-			if not self._marked[v][0]:
-				self._dfs(G, v, 0)
 
-	def _dfs(self, G, v, level):
-		if not self._cycle:
-			self._marked[v] = (True, level)
-			for w in G.adj(v):
-				if not self._marked[w][0]:
-					self._edgeTo[w] = v
-					self._dfs(G, w, level + 1)
-				elif level < self._marked[w][1]:
-					# reached w from level above
-					# not a cycle
-					pass
-				else:
-					# found cycle
-					x = v
-					while (x != w):
-						self._cycle.append(x)
-						x = self._edgeTo[x]
-					self._cycle.append(w)
-					self._cycle.append(v)
-					print self._cycle
-					return
+class DC(object):
+	"finds first directed cycle in a digraph"
+	def __init__(self, G):
+		self._marked = [False for _ in range(G.V())]
+		self._edgeTo = [-1 for _ in range(G.V())]
+		self._onStack = [False for _ in range(G.V())]
+		self._cycle = []
+		self._cycleFound = False
+		for v in range(G.V()):
+			if self._cycleFound: return
+			if not self._marked[v]:
+				self._dfs(G, v)
+
+	def _dfs(self, G, v):
+		if self._cycleFound: return
 		else:
-			return
+			self._marked[v] = True
+			self._onStack[v] = True
+			for w in G.adj(v):
+				"vertices downstream and adjacent to v are in adj[v]"
+				if not self._marked[w]:
+					self._edgeTo[w] = v
+					#print 'entering dfs', 'v = ', v, 'w = ', w
+					self._dfs(G, w)
+				elif self._onStack[w]:
+					# found cycle
+					if not self._cycleFound: 
+						self._cycleFound = True
+						# trace back directed cycle
+						x = v
+						while (x != w):
+							self._cycle.append(x)
+							x = self._edgeTo[x]
+						self._cycle.append(w)
+						self._cycle.append(v)
+		self._onStack[v] = False
+
 
 	def cycle(self):
-		if not self._cycle:
-			print "no cycle"
-		else:
-			for _ in range(len(self._cycle)):
-				print self._cycle.pop()
+		return self._cycle[::-1]
 
 	def hasCycle(self):
-		if not self._cycle:
-			return False
+		return self._cycleFound
+
+class EdgeWeightedDC(object):
+	"finds first directed cycle in an EdgeWeighted digraph"
+	def __init__(self, G):
+		self._marked = [False for _ in range(G.V())]
+		self._edgeTo = [-1 for _ in range(G.V())]
+		self._onStack = [False for _ in range(G.V())]
+		self._cycle = []
+		self._cycleFound = False
+		for v in range(G.V()):
+			if self._cycleFound: return
+			if not self._marked[v]:
+				self._dfs(G, v)
+
+	def _dfs(self, G, v):
+		self._marked[v] = True
+		self._onStack[v] = True
+		if self._cycleFound: return
 		else:
-			return True
+			for e in G.adj(v):
+				"weighted edges are in adj[v]"
+				w = e.sink()
+				if not self._marked[w]:
+					self._edgeTo[w] = e 
+					self._dfs(G, w)
+				elif self._onStack[w]:
+					# found cycle
+					if not self._cycleFound: 
+						self._cycleFound = True
+						# trace back directed cycle
+						while (e.src() != w):
+							self._cycle.append(e)
+							e = self._edgeTo[e.src()]
+						self._cycle.append(e)
+		self._onStack[v] = False
+
+	def cycle(self):
+		return self._cycle[::-1]
+
+
+	def hasCycle(self):
+		return self._cycleFound
+
 
 
 
